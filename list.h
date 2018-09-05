@@ -22,5 +22,6 @@ void list_insert(struct list_head *prev,struct list_head *next,struct list_head 
 #define list_insert_befor(entry,new)	list_insert(entry->prev,entry,new)
 
 #define INIT_LIST(name)	struct list_head *name; list_init(name);
+#define ARRAY_SIZE(array)	sizeof(array)/sizeof(array[0])
 
 #endif
